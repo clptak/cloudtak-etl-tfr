@@ -1,5 +1,5 @@
 {
-    "name": "etl-tfr",
+    "name": "cloudtak-etl-tfr",
     "type": "module",
     "private": true,
     "version": "1.0.0",

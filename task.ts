@@ -39,7 +39,7 @@ const CONCURRENCY = 8;
 const TIMEOUT = 20 * 1000;
 
 export default class Task extends ETL {
-    static name = 'etl-tfr';
+    static name = 'cloudtak-etl-tfr';
     static flow = [ DataFlowType.Incoming ];
     static invocation = [ InvocationType.Schedule ];
 
