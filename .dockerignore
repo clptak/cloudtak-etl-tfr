@@ -1,0 +1,12 @@
+.env
+.env.*
+
+# Built inside the image
+node_modules
+dist
+*.tsbuildinfo
+
+.git
+.vscode
+coverage
+test

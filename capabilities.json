@@ -1,0 +1,27 @@
+{
+    "version": "1.0",
+    "name": "FAA TFR",
+    "description": "Polls the FAA TFR list and posts each active or upcoming Temporary Flight Restriction area as a TAK polygon - filtered to the selected states, or nationwide when none are selected.",
+    "compute": {
+        "memory": 256,
+        "timeout": 120
+    },
+    "permissions": [
+        {
+            "resource": "feature:*",
+            "required": true,
+            "description": "Posts TFR areas to the map"
+        }
+    ],
+    "invocations": {
+        "incoming": {
+            "schedule": {
+                "description": "Polls tfr.faa.gov for the current TFR list on a schedule.",
+                "default": {
+                    "enabled": true,
+                    "schedule": "rate(15 minutes)"
+                }
+            }
+        }
+    }
+}

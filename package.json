@@ -1,0 +1,32 @@
+{
+    "name": "etl-tfr",
+    "type": "module",
+    "private": true,
+    "version": "1.0.0",
+    "description": "CloudTAK ETL that posts FAA Temporary Flight Restrictions as TAK polygons",
+    "main": "dist/task.js",
+    "scripts": {
+        "lint": "eslint *.ts lib test",
+        "build": "tsc --build",
+        "test": "tsx --test test/*.test.ts"
+    },
+    "author": "Paul Clifton <paul.clifton@clptak.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">= 24"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.0",
+        "eslint": "^10.0.0",
+        "tsx": "^4.23.15",
+        "typescript": "^6.0.0",
+        "typescript-eslint": "^8.58.1"
+    },
+    "dependencies": {
+        "@sinclair/typebox": "^0.34.0",
+        "@tak-ps/etl": "^10.25.1",
+        "@tak-ps/node-cot": "^14.56.0",
+        "@types/geojson": "^7946.0.10",
+        "fast-xml-parser": "^5.11.2"
+    }
+}
