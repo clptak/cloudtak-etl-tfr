@@ -11,7 +11,7 @@
         "test": "tsx --test test/*.test.ts"
     },
     "author": "Paul Clifton <paul.clifton@clptak.com>",
-    "license": "MIT",
+    "license": "AGPL-3.0-only",
     "engines": {
         "node": ">= 24"
     },
